@@ -11,9 +11,10 @@
             display: flex;
             justify-items:auto;
         } */
-         *{
+        * {
             box-sizing: border-box;
-         }
+        }
+
         .par-div {
             border: 1px solid #bcc3ca94;
             border-radius: 10px;
@@ -73,6 +74,7 @@
             color: white;
             font-size: 15px;
         }
+
         .file-select {
             height: 30px;
             border: 1px solid black;
@@ -97,7 +99,7 @@
             padding: 0px 10px;
         }
 
-        .btn{
+        .btn {
             align-self: flex-end;
             background-color: #bcc3ca94;
             /* border: 1px solid black; */
@@ -111,7 +113,8 @@
             padding: 0px 30px;
             margin-top: 5%;
         }
-        .submit{
+
+        .submit {
             font-size: 20px;
             height: 70%;
             border-radius: 5px;
@@ -120,10 +123,12 @@
             color: white;
             padding: 0px 15px;
         }
-        .file-div{
+
+        .file-div {
             display: flex;
         }
-        .file-input-1{
+
+        .file-input-1 {
             height: 30px;
             width: 70%;
             border: 1px solid rgba(0, 0, 0, 0.397);
@@ -131,7 +136,8 @@
             border-bottom-left-radius: 5px;
             padding: 0px 5px;
         }
-        .file-input-2{
+
+        .file-input-2 {
             height: 30px;
             width: 30%;
             border: 1px solid #bcc3ca96;
@@ -144,7 +150,8 @@
             justify-content: center;
             align-items: center;
         }
-        .navbar{
+
+        .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -153,7 +160,6 @@
             padding: 10px 20px;
             margin-bottom: 30px;
         }
-        
     </style>
 </head>
 
@@ -173,17 +179,17 @@
         <form action="">
             <div class="div-in-form">
                 <label for="title">Title:*</label>
-                <input type="text" name="title" id="" required class="text-input">
+                <input type="text" name="" id="title" required class="text-input">
             </div>
 
             <div class="div-in-form">
                 <label for="desc">Description:*</label>
-                <textarea name="desc" id="" class="text-area"></textarea>
+                <textarea name="" id="desc" class="text-area"></textarea>
             </div>
 
             <div class="div-in-form">
                 <label for="os">Operating System:</label>
-                <select name="os" id="" class="os-select">
+                <select name="" id="os" class="os-select">
                     <option value="windows">Windows</option>
                     <option value="linux">Linux</option>
                 </select>
@@ -192,7 +198,7 @@
 
             <div class="div-in-form">
                 <label for="prod">Product:*</label>
-                <select name="prod" id="" class="os-select">
+                <select name="" id="prod" class="os-select">
                     <option value="prod1">prod1</option>
                     <option value="prod2">prod2</option>
                 </select>
@@ -201,7 +207,7 @@
 
             <div class="div-in-form">
                 <label for="version">Version:</label>
-                <input type="text" name="version" class="version-input">
+                <input type="text" id="version" class="version-input">
             </div>
 
 
@@ -212,20 +218,20 @@
                 <div class="radio-div">
                     <div>
                         <input type="radio" name="license" id="free" value="Free">
-                    <label for="free">Free</label>
+                        <label for="free">Free</label>
                     </div>
 
 
                     <div>
                         <input type="radio" name="license" id="business" value="Business">
-                    <label for="business">Business</label>
+                        <label for="business">Business</label>
                     </div>
                 </div>
             </div>
 
             <div class="div-in-form">
                 <label for="severity">Severity:*</label>
-                <select name="severity" id="" class="os-select">
+                <select name="" id="severity" class="os-select">
                     <option value="low">low</option>
                     <option value="medium">medium</option>
                     <option value="critical">critical</option>
@@ -236,7 +242,8 @@
                 <label for="attachments">Attachments:</label>
                 <input type="file" id="attachments" class="file-select ">
                 <div class="file-div">
-                    <input type="text" name="title" id="" class="file-input-1" placeholder="No file selected..." readonly>
+                    <input type="text" name="title" id="" class="file-input-1" placeholder="No file selected..."
+                        readonly>
                     <label for="attachments" name="title" id="" class="file-input-2">Choose File</label>
                 </div>
             </div>
