@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Report</title>
+
+    <style>
+        /* body{
+            display: flex;
+            justify-items:auto;
+        } */
+         *{
+            box-sizing: border-box;
+         }
+        .par-div {
+            border: 1px solid #bcc3ca94;
+            border-radius: 10px;
+            margin: 10px auto;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        h2 {
+            /* border: 1px solid black; */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-top: 0px;
+            padding: 28px 30px;
+            background-color: #bcc3ca94;
+            color: white;
+            font-size: 35px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px 30px;
+            font-size: 20px;
+        }
+
+        .div-in-form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .text-input {
+            height: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.397);
+            border-radius: 3px;
+            padding: 0px 5px;
+        }
+
+        .text-area {
+            height: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.397);
+            border-radius: 3px;
+            padding: 0px 5px;
+        }
+
+        .os-select {
+            height: 30px;
+            border: 1px solid #1ABC9C;
+            border-radius: 3px;
+            padding: 0px 10px;
+            background-color: #1ABC9C;
+            color: white;
+            font-size: 15px;
+        }
+        .file-select {
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 0px 5px;
+            /* background-color: #1ABC9C; */
+            color: white;
+            display: none;
+        }
+
+        .version-input {
+            height: 30px;
+            width: 30%;
+            border: 1px solid rgba(0, 0, 0, 0.397);
+            border-radius: 3px;
+            padding: 0px 5px;
+        }
+
+        .radio-div {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10px;
+        }
+
+        .btn{
+            align-self: flex-end;
+            background-color: #bcc3ca94;
+            /* border: 1px solid black; */
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 100%;
+            height: 55px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding: 0px 30px;
+            margin-top: 5%;
+        }
+        .submit{
+            font-size: 20px;
+            height: 70%;
+            border-radius: 5px;
+            background-color: #1ABC9C;
+            border: 1px solid #1ABC9C;
+            color: white;
+            padding: 0px 15px;
+        }
+        .file-div{
+            display: flex;
+        }
+        .file-input-1{
+            height: 30px;
+            width: 70%;
+            border: 1px solid rgba(0, 0, 0, 0.397);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding: 0px 5px;
+        }
+        .file-input-2{
+            height: 30px;
+            width: 30%;
+            border: 1px solid #bcc3ca96;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 0px 5px;
+            background-color: #bcc3ca96;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #1ABC9C;
+            /* border: 1px solid black; */
+            padding: 10px 20px;
+            margin-bottom: 30px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <span style="font-size: 30px;">
+            TO THE NEW
+        </span>
+        <span style="display: flex; gap:15px">
+            <span>Home</span>
+            <span>Quick Help</span>
+        </span>
+    </div>
+    <div class="par-div">
+        <h2>Bug Report</h2>
+
+        <form action="">
+            <div class="div-in-form">
+                <label for="title">Title:*</label>
+                <input type="text" name="title" id="" required class="text-input">
+            </div>
+
+            <div class="div-in-form">
+                <label for="desc">Description:*</label>
+                <textarea name="desc" id="" class="text-area"></textarea>
+            </div>
+
+            <div class="div-in-form">
+                <label for="os">Operating System:</label>
+                <select name="os" id="" class="os-select">
+                    <option value="windows">Windows</option>
+                    <option value="linux">Linux</option>
+                </select>
+            </div>
+
+
+            <div class="div-in-form">
+                <label for="prod">Product:*</label>
+                <select name="prod" id="" class="os-select">
+                    <option value="prod1">prod1</option>
+                    <option value="prod2">prod2</option>
+                </select>
+            </div>
+
+
+            <div class="div-in-form">
+                <label for="version">Version:</label>
+                <input type="text" name="version" class="version-input">
+            </div>
+
+
+            <div class="div-in-form">
+                <div>License:</div>
+
+
+                <div class="radio-div">
+                    <div>
+                        <input type="radio" name="license" id="free" value="Free">
+                    <label for="free">Free</label>
+                    </div>
+
+
+                    <div>
+                        <input type="radio" name="license" id="business" value="Business">
+                    <label for="business">Business</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-in-form">
+                <label for="severity">Severity:*</label>
+                <select name="severity" id="" class="os-select">
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="critical">critical</option>
+                </select>
+            </div>
+
+            <div class="div-in-form">
+                <label for="attachments">Attachments:</label>
+                <input type="file" id="attachments" class="file-select ">
+                <div class="file-div">
+                    <input type="text" name="title" id="" class="file-input-1" placeholder="No file selected..." readonly>
+                    <label for="attachments" name="title" id="" class="file-input-2">Choose File</label>
+                </div>
+            </div>
+
+
+        </form>
+
+        <div class="btn">
+            <input type="submit" value="submit" class="submit">
+        </div>
+    </div>
+</body>
+
+</html>
